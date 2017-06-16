@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="db3bb3ba93cf4f63b1fda18d0d750ba7" Name="Diagram1" ZoomLevel="93" >
+        <EntityTypeShape EntityType="casusB2D3_BU.AccountRole" Width="1.5" PointX="2.25" PointY="0.5" />
+        <EntityTypeShape EntityType="casusB2D3_BU.User" Width="1.5" PointX="2.25" PointY="3.125" />
+        <EntityTypeShape EntityType="casusB2D3_BU.Contact" Width="1.5" PointX="2.25" PointY="6.25" />
+        <AssociationConnector Association="casusB2D3_BU.AcountRoleUser" />
+        <AssociationConnector Association="casusB2D3_BU.ContactUser" />
+        <EntityTypeShape EntityType="casusB2D3_BU.ProductReview" Width="1.5" PointX="4.875" PointY="0.5" />
+        <AssociationConnector Association="casusB2D3_BU.ProductReviewUser" ></AssociationConnector>
+        <EntityTypeShape EntityType="casusB2D3_BU.Product" Width="1.5" PointX="7.375" PointY="0.5" />
+        <AssociationConnector Association="casusB2D3_BU.ProductReviewProduct" />
+        <EntityTypeShape EntityType="casusB2D3_BU.Category" Width="1.5" PointX="11.5" PointY="0.5" />
+        <AssociationConnector Association="casusB2D3_BU.ProductCategory" />
+        <EntityTypeShape EntityType="casusB2D3_BU.Supplier" Width="1.5" PointX="11.5" PointY="4.125" />
+        <AssociationConnector Association="casusB2D3_BU.ProductSupplier" ManuallyRouted="true" >
+          <ConnectorPoint PointX="8.125" PointY="4.2109993489583317" />
+          <ConnectorPoint PointX="8.125" PointY="4.759095552083334" />
+          <ConnectorPoint PointX="11.1324625" PointY="4.759095552083334" />
+          <ConnectorPoint PointX="11.1324625" PointY="5.446595552083334" />
+          <ConnectorPoint PointX="11.5" PointY="5.446595552083334" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="casusB2D3_BU.OperationArea" Width="1.5" PointX="9.5" PointY="2.375" />
+        <AssociationConnector Association="casusB2D3_BU.CategoryOperationArea" />
+        <EntityTypeShape EntityType="casusB2D3_BU.History" Width="1.5" PointX="5" PointY="4.5" />
+        <AssociationConnector Association="casusB2D3_BU.HistoryUser" />
+        <AssociationConnector Association="casusB2D3_BU.HistoryProduct" />
+        <EntityTypeShape EntityType="casusB2D3_BU.Occasion" Width="1.875" PointX="5" PointY="8" />
+        <AssociationConnector Association="casusB2D3_BU.OccasionHistory" />
+        <EntityTypeShape EntityType="casusB2D3_BU.News" Width="1.5" PointX="8" PointY="5.25" />
+        <AssociationConnector Association="casusB2D3_BU.NewsHistory" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
